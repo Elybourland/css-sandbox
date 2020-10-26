@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Align</title>
+    <style>
+
+        /* Add box-sizing: border-box to all to take away padding from width */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4em;
+        }
+
+        /* Wrap in a div with a class = container */
+        /* Use max-width for responsive design */
+
+        .container {
+            max-width: 960px;
+            margin: 30px auto;
+        }
+
+        /* Created a clear: both class div to clear floats */
+        /* clear: left (if only left floats); clear: right (if only right floats) */
+
+        .clr {
+            clear: both;
+        }
+
+        .box {
+            background: #f4f4f4;
+            border: 1px solid #333;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        .box p {
+            /* Text align */
+            text-align: justify;
+        }
+
+        /* Floating div */
+
+        #box-2 {
+            float: left;
+            width: 68%;
+        }
+
+        #box-3 {
+            float: right;
+            width: 30%;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div id="box-1" class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae omnis beatae totam repudiandae excepturi iure assumenda fugit maiores! Autem, dolorem!</p>
+        </div>
+        <div id="box-2" class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae omnis beatae totam repudiandae excepturi iure assumenda fugit maiores! Autem, dolorem!</p>
+        </div>
+        <div id="box-3" class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae omnis beatae totam repudiandae excepturi iure assumenda fugit maiores! Autem, dolorem!</p>
+        </div>
+
+        <!-- Insert clear class div where you want remaining content to clear floats -->
+
+        <div class="clr"></div>
+
+        <div id="box-4" class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae omnis beatae totam repudiandae excepturi iure assumenda fugit maiores! Autem, dolorem!</p>
+        </div>
+
+    </div>
+  
+</body>
+</html>
